@@ -1,0 +1,8 @@
+# ninja log v5
+1	185	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/debugger.c.o	4f490fc01c063e7a
+11	319	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/checksignature.c.o	54c64c52bf1291d
+13	330	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/aes.c.o	adc62dcb6112e773
+8	339	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/base64.c.o	7a4eea3b1407a729
+15	341	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/check_emulator.c.o	aeb1144c806073ec
+6	352	0	CMakeFiles/JNIEncrypt.dir/src/main/cpp/JNIEncrypt.c.o	474ceb75d2e22bb0
+352	460	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libJNIEncrypt.so	8b4773ee11c1479c

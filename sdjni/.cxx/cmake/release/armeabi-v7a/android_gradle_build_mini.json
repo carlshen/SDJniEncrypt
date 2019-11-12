@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "D:\\shenxf\\SDJniEncrypt28\\sdjni\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "JNIEncrypt-Release-armeabi-v7a": {
+      "artifactName": "JNIEncrypt",
+      "buildCommand": "D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\armeabi-v7a --target JNIEncrypt",
+      "abi": "armeabi-v7a",
+      "output": "D:\\shenxf\\SDJniEncrypt28\\sdjni\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libJNIEncrypt.so"
+    },
+    "lib_tongfang-Release-armeabi-v7a": {
+      "artifactName": "lib_tongfang",
+      "abi": "armeabi-v7a",
+      "output": "D:\\shenxf\\SDJniEncrypt28\\sdjni\\..\\distribution\\tongfang\\lib\\armeabi-v7a\\libTongfang.so"
+    }
+  }
+}

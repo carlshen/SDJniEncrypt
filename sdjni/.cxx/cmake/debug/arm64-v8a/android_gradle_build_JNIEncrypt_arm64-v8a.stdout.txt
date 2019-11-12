@@ -1,0 +1,88 @@
+[1/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/debugger.c.o
+[2/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/JNIEncrypt.c.o
+[3/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/base64.c.o
+[4/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/checksignature.c.o
+[5/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/aes.c.o
+[6/7] Building C object CMakeFiles/JNIEncrypt.dir/src/main/cpp/check_emulator.c.o
+In file included from D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\checksignature.c:6:
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/logger.h:6:9: warning: 'LOG_TAG' macro redefined [-Wmacro-redefined]
+#define LOG_TAG "jni_log"
+        ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/checksignature.h:2:11: note: previous definition is here
+#define   LOG_TAG    "native_log"
+          ^
+In file included from D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\checksignature.c:6:
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/logger.h:8:9: warning: 'LOGI' macro redefined [-Wmacro-redefined]
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
+        ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/checksignature.h:4:9: note: previous definition is here
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+        ^
+2 warnings generated.
+In file included from D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\aes.c:39:
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/logger.h:9:9: warning: 'LOGE' macro redefined [-Wmacro-redefined]
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
+        ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/aes.h:24:9: note: previous definition is here
+#define LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,"native-jni",__VA_ARGS__)
+        ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\aes.c:514:48: warning: passing 'char *' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+    AES128_ECB_encrypt(paddingInput+i*16, key, out+i*16);
+                                               ^~~~~~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\aes.c:454:70: note: passing argument to parameter 'output' here
+void AES128_ECB_encrypt(uint8_t* input, const uint8_t* key, uint8_t* output)
+                                                                     ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\aes.c:516:30: warning: passing 'char *' to parameter of type 'const unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  char * base64En=b64_encode(out,paddingInputLengt);
+                             ^~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp/base64.h:36:34: note: passing argument to parameter here
+b64_encode (const unsigned char *, size_t);
+                                 ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\aes.c:559:13: warning: comparison between pointer and integer ('int' and 'void *')
+    if(index==NULL)
+       ~~~~~^ ~~~~
+4 warnings generated.
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:62:12: warning: returning 'unsigned char *' from a function with result type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    return b64_decode(encode_str, strlen(encode_str));
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:139:42: warning: expression which evaluates to zero treated as a null pointer constant of type 'const char *' [-Wnon-literal-null-conversion]
+        return (*env)->NewStringUTF(env, '\0');
+                                         ^~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:195:42: warning: expression which evaluates to zero treated as a null pointer constant of type 'const char *' [-Wnon-literal-null-conversion]
+        return (*env)->NewStringUTF(env, '\0');
+                                         ^~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:199:59: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    unsigned long baseResult = SDSCGetFirmwareVer(handle, firmVer, &firmLen);
+                                                          ^~~~~~~
+../../../../../distribution/tongfang/include\SDSCDev.h:209:20: note: passing argument to parameter 'pbFirmwareVer' here
+    unsigned char *pbFirmwareVer,
+                   ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:212:42: warning: expression which evaluates to zero treated as a null pointer constant of type 'const char *' [-Wnon-literal-null-conversion]
+        return (*env)->NewStringUTF(env, '\0');
+                                         ^~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:216:55: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    unsigned long baseResult = SDSCGetFlashID(handle, flashId, &flashLen);
+                                                      ^~~~~~~
+../../../../../distribution/tongfang/include\SDSCDev.h:225:20: note: passing argument to parameter 'pbFlashID' here
+    unsigned char *pbFlashID,
+                   ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:230:42: warning: expression which evaluates to zero treated as a null pointer constant of type 'const char *' [-Wnon-literal-null-conversion]
+        return (*env)->NewStringUTF(env, '\0');
+                                         ^~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:234:54: warning: passing 'char *' to parameter of type 'unsigned char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    unsigned long baseResult = SDSCResetCard(handle, pbAtr, &pulAtrLen);
+                                                     ^~~~~
+../../../../../distribution/tongfang/include\SDSCDev.h:242:20: note: passing argument to parameter 'pbAtr' here
+    unsigned char *pbAtr,
+                   ^
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:256:20: warning: initializing 'unsigned char *' with an expression of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    unsigned char *pbOutData = (char *) malloc(SDSC_MAX_DEV_NAME_LEN * sizeof(char));
+                   ^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:288:20: warning: initializing 'unsigned char *' with an expression of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+    unsigned char *pbOutData = (char *) malloc(SDSC_MAX_DEV_NAME_LEN * sizeof(char));
+                   ^           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\shenxf\SDJniEncrypt28\sdjni\src\main\cpp\JNIEncrypt.c:315:42: warning: expression which evaluates to zero treated as a null pointer constant of type 'const char *' [-Wnon-literal-null-conversion]
+        return (*env)->NewStringUTF(env, '\0');
+                                         ^~~~
+11 warnings generated.
+[7/7] Linking C shared library ..\..\..\..\build\intermediates\cmake\debug\obj\arm64-v8a\libJNIEncrypt.so

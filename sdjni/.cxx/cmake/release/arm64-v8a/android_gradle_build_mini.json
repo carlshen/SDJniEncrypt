@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "D:\\shenxf\\SDJniEncrypt28\\sdjni\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "lib_tongfang-Release-arm64-v8a": {
+      "artifactName": "lib_tongfang",
+      "abi": "arm64-v8a",
+      "output": "D:\\shenxf\\SDJniEncrypt28\\sdjni\\..\\distribution\\tongfang\\lib\\arm64-v8a\\libTongfang.so"
+    },
+    "JNIEncrypt-Release-arm64-v8a": {
+      "artifactName": "JNIEncrypt",
+      "buildCommand": "D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\arm64-v8a --target JNIEncrypt",
+      "abi": "arm64-v8a",
+      "output": "D:\\shenxf\\SDJniEncrypt28\\sdjni\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libJNIEncrypt.so"
+    }
+  }
+}

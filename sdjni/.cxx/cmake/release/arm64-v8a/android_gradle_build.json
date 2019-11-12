@@ -1,0 +1,76 @@
+
+{
+	"buildFiles" : [ "D:/shenxf/SDJniEncrypt28/sdjni/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\arm64-v8a --target clean"
+	],
+	"libraries" : 
+	{
+		"JNIEncrypt-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "JNIEncrypt",
+			"buildCommand" : "D:\\androids\\android-sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\shenxf\\SDJniEncrypt28\\sdjni\\.cxx\\cmake\\release\\arm64-v8a --target JNIEncrypt",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/JNIEncrypt.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/checksignature.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/check_emulator.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/debugger.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/aes.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DJNIEncrypt_EXPORTS -I..\\..\\..\\..\\..\\distribution\\tongfang\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/shenxf/SDJniEncrypt28/sdjni/src/main/cpp/base64.c",
+					"workingDirectory" : "D:/shenxf/SDJniEncrypt28/sdjni/.cxx/cmake/release/arm64-v8a"
+				}
+			],
+			"output" : "D:/shenxf/SDJniEncrypt28/sdjni/build/intermediates/cmake/release/obj/arm64-v8a/libJNIEncrypt.so",
+			"toolchain" : "1147910361"
+		},
+		"lib_tongfang-Release-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "lib_tongfang",
+			"buildType" : "release",
+			"output" : "D:/shenxf/SDJniEncrypt28/sdjni/../distribution/tongfang/lib/arm64-v8a/libTongfang.so",
+			"toolchain" : "1147910361"
+		}
+	},
+	"toolchains" : 
+	{
+		"1147910361" : 
+		{
+			"cCompilerExecutable" : "D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/androids/android-sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
