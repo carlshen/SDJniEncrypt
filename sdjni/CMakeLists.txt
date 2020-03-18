@@ -13,6 +13,18 @@ add_library( # Sets the name of the library.
              # Sets the library as a shared library.
              SHARED
 
+             src/main/cpp/dev_auth.c
+             src/main/cpp/dev_cipher.c
+             src/main/cpp/dev_con.c
+             src/main/cpp/dev_dgst.c
+             src/main/cpp/dev_ecc.c
+             src/main/cpp/dev_file.c
+             src/main/cpp/dev_manage.c
+             src/main/cpp/dev_rsa.c
+             src/main/cpp/util.c
+             src/main/cpp/sdkey.h
+             src/main/cpp/skf.h
+             src/main/cpp/logger.h
              # Provides a relative path to your source file(s).
              src/main/cpp/JNIEncrypt.c
              src/main/cpp/checksignature.h

@@ -67,7 +67,7 @@ JNIEXPORT jstring JNICALL encode(JNIEnv *env, jobject instance, jobject context,
 
     //先进行apk被 二次打包的校验
     if (check_signature(env, instance, context) != 1 || check_is_emulator(env) != 1) {
-        char *str = (char *) UNSIGNATURE;
+        char *str = UNSIGNATURE;
 //        return (*env)->NewString(env, str, strlen(str));
         return charToJstring(env,str);
     }
@@ -89,7 +89,7 @@ JNIEXPORT jstring JNICALL decode(JNIEnv *env, jobject instance, jobject context,
 
     //先进行apk被 二次打包的校验
     if (check_signature(env, instance, context) != 1|| check_is_emulator(env) != 1) {
-        char *str = (char *) UNSIGNATURE;
+        char *str = UNSIGNATURE;
 //        return (*env)->NewString(env, str, strlen(str));
         return charToJstring(env,str);
     }
@@ -109,7 +109,7 @@ JNIEXPORT jstring JNICALL decode(JNIEnv *env, jobject instance, jobject context,
 
 JNIEXPORT jlong JNICALL set_package(JNIEnv *env, jobject instance, jstring str_) {
     // set package name
-    char *pkgname = (char *) (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
+    char *pkgname = (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
     LOGI("set_package package name: %s\n", pkgname);
     unsigned long pkgresult = SDSCSetPackageName(pkgname);
     LOGI("setpackage result: %ld", pkgresult);
@@ -118,7 +118,7 @@ JNIEXPORT jlong JNICALL set_package(JNIEnv *env, jobject instance, jstring str_)
 }
 
 JNIEXPORT jlong JNICALL init_params(JNIEnv *env, jobject instance, jlong handle, jstring str_) {
-    char *szDrive = (char *) (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
+    char *szDrive = (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
     LOGI("init_params szDrive: %s\n", szDrive);
     unsigned long baseResult = SDSCInitParams(handle, szDrive);
     LOGI("init_params baseResult: %ld", baseResult);
@@ -152,7 +152,7 @@ JNIEXPORT jstring JNICALL refresh_dev(JNIEnv *env, jobject instance) {
 }
 
 JNIEXPORT jint JNICALL connect_dev(JNIEnv *env, jobject instance, jstring str_) {
-    char *szDrive = (char *) (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
+    char *szDrive = (*env)->GetStringUTFChars(env, str_, JNI_FALSE);
     if (szDrive == NULL) {
         LOGE("connect_dev with null string.");
         return -1;
